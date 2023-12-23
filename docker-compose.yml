@@ -58,6 +58,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - my-network
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
@@ -77,3 +79,6 @@ services:
       - elasticsearch
     ports:
       - 5601:5601
+
+networks:
+  my-network:

@@ -33,7 +33,7 @@ def main():
     # Time this line is execute
     current_time = datetime.now()
 
-    while (datetime.now() - current_time).seconds < 60:
+    while (datetime.now() - current_time).seconds < 90:
         try:
             p = generate_profile()
             print(p)

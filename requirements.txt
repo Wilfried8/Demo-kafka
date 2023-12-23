@@ -2,3 +2,4 @@ faker
 confluent_kafka
 psycopg2
 elasticsearch
+duckdb
